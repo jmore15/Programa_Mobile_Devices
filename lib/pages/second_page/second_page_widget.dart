@@ -74,6 +74,7 @@ class _SecondPageWidgetState extends State<SecondPageWidget> {
                   ),
                 ),
               ),
+              const Spacer(),
               FFButtonWidget(
                 onPressed: () async {
                   context.pushNamed('HomePage');
