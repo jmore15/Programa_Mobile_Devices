@@ -1,5 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'home_page_model.dart';
 export 'home_page_model.dart';
@@ -40,7 +41,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           title: Text(
-            'Page Title',
+            FFLocalizations.of(context).getText(
+              't6lxp00z' /* Page Title */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Inter Tight',
                   color: Colors.white,
@@ -71,11 +74,35 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                   ),
                 ),
               ),
+              FFButtonWidget(
+                onPressed: () async {
+                  context.pushNamed('SecondPage');
+                },
+                text: FFLocalizations.of(context).getText(
+                  '7tzz8srb' /* Button */,
+                ),
+                options: FFButtonOptions(
+                  height: 40.0,
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  iconPadding:
+                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                  color: const Color(0xB06F6D6D),
+                  textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                        fontFamily: 'Inter Tight',
+                        color: Colors.white,
+                        letterSpacing: 0.0,
+                      ),
+                  elevation: 0.0,
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
               Expanded(
                 child: Align(
                   alignment: const AlignmentDirectional(0.0, 0.0),
                   child: Text(
-                    'Bienvenido a la primera pantalla',
+                    FFLocalizations.of(context).getText(
+                      'fvev0pkf' /* Bienvenido a la primera pantal... */,
+                    ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Inter',
                           letterSpacing: 0.0,
